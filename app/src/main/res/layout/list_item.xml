@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="list_item"
+            type="com.sld.todolist.activity.MainActivity"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/item_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/item_handle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_baseline_drag_handle_dark_24"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:maxLines="1"
+                android:gravity="clip_vertical"
+                android:ellipsize="end"
+                android:paddingStart="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/item_handle"
+                app:layout_constraintBottom_toTopOf="@id/description"/>
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintLeft_toRightOf="@+id/item_handle"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="description"
+                android:paddingStart="8dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:gravity="clip_vertical"
+                android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+                android:button="@null"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

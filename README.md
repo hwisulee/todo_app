@@ -27,7 +27,7 @@
 
 4. 아이템 롱 클릭
 
-![4](https://user-images.githubusercontent.com/62528282/215702184-c944fdad-eaac-4f85-bc49-ba00c326b645.gif)
+![6](https://user-images.githubusercontent.com/62528282/215702192-f1359048-6ee8-40de-9f5d-01494f2120c2.gif)
 
 5. 아이템 슬라이드
 
@@ -35,7 +35,7 @@
 
 6. 아이템 스크롤
 
-![6](https://user-images.githubusercontent.com/62528282/215702192-f1359048-6ee8-40de-9f5d-01494f2120c2.gif)
+![4](https://user-images.githubusercontent.com/62528282/215702184-c944fdad-eaac-4f85-bc49-ba00c326b645.gif)
 
 
 >Knowledge Used
